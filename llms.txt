@@ -1,0 +1,21 @@
+# The Uncanny Valley of AI Writing / AI 글쓰기의 불쾌한 골짜기
+
+> A fact-checked research dossier on why readers turn away from AI-generated text. All five sources cited in the originating analysis were independently verified (one bibliographic correction, one interpretive correction), 86 papers were collected from arXiv and OpenAlex and mapped across seven themes, counter-evidence is presented in full, and a four-item gap ledger lists what no study has yet measured. AI가 생성한 텍스트에서 독자가 이탈하는 이유를 팩트체크한 조사 보고서.
+
+## Key findings
+
+- The common story "readers detect AI text and reject it" holds only partially. In Porter and Machery (2024, Scientific Reports), non-expert readers classified AI poems below chance (46.6%) and rated them MORE favorably than human poems.
+- Readers judge provenance labels and shallow humanness heuristics (first-person pronouns, contractions, family topics) more than the text itself: Jakesch et al. (2023, PNAS, N=4,600) and Bellaiche et al. (2023).
+- Fluency is a learned cue to truth (Reber and Unkelbach 2010); AI text maximizes fluency while collapsing the verified-truth ratio that used to back the cue. The reader's unease tracks the misfiring cue, not fluency per se.
+- Reading fatigue tracks averaged predictability (low surprisal) more than uniform sentence length.
+- The GPT-4o "cognitive dissonance" finding (Lehr et al., PNAS 2025) is contested: Cummins et al. argue context-window effects suffice.
+- Open gaps: no corpus study directly measures reader aversion; the causal effect of disclosing AI authorship in reading contexts is untested; writer-side effects are never linked to reader-side reactions; no longitudinal or behavioral measures exist.
+
+## Pages
+
+- [Full dossier (HTML, Korean/English toggle)](https://epicsagas.github.io/uncanny-writing/): verification verdicts, three mechanisms, evidence map with 86 paper cards, counter-evidence, gap ledger, implications for writers
+- [Full text for LLMs (Markdown)](https://epicsagas.github.io/uncanny-writing/llms-full.txt): the complete report as plain text, Korean and English
+
+## Method
+
+Collected with research-agent 0.2.6 (arXiv + OpenAlex, 86 papers indexed, 15 triage-rated). Citations checked against primary records and DOIs via Exa web search. Gap analysis run over the full corpus with an LLM pass. Generated September 21, 2026.

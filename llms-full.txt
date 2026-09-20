@@ -1,0 +1,94 @@
+# The Uncanny Valley of AI Writing / AI 글쓰기의 불쾌한 골짜기
+# Full text for LLMs — Korean and English. Generated 2026-09-21.
+
+====================================================================
+PART 1 — ENGLISH
+====================================================================
+
+## 1. Source verification: what actually exists
+
+All five sources tagged [Verified] in the input analysis were checked independently. All five exist. What failed was not existence but accuracy.
+
+1. Frontiers in Psychology (2026), under a different title. Actual title: "Risk Perception and Discontinuation Intention of Generative AI: Mediating Effect of Cognitive Fatigue and Moderating Effect of AI Dependence" (doi:10.3389/fpsyg.2026.1879080, n=426). Empirical, cognition-affect-behavior framework: perceiving misinformation and privacy risks raises AI anxiety, cognitive fatigue mediates, AI dependence weakens the path to discontinuance. CORRECTION: the paper measures no reading fluency and no hallucination detection; it studies intention to quit AI services, not abandoning a text.
+2. Seran et al. (2025). "A conceptual exploration of generative AI-induced cognitive dissonance and its emergence in university-level academic writing" (Frontiers in AI, doi:10.3389/frai.2025.1573368). Conceptual, no data; subjects are students who write with AI, not readers.
+3. Lehr et al., PNAS (2025). "Kernels of selfhood: GPT-4o shows humanlike patterns of cognitive dissonance moderated by free choice" (doi:10.1073/pnas.2501823122). Preregistered induced-compliance studies (1,050 trials): GPT-4o shifts its attitudes toward an essay it just wrote about Putin; an illusion of free choice amplifies the shift. CORRECTION: "statistically proves the gap between mechanical overconfidence and empty content" is not this paper's claim. CONTESTED: Cummins et al. (doi:10.1073/pnas.2517912122) argue context-window effects suffice; Lehr et al. replied (doi:10.1073/pnas.2518613122).
+4. Kenneth Reitz, "The Uncanny Valley of AI Writing" (essay). Accurately summarized: too-clean paragraphs, evenly distributed vocabulary, combinatorial vs genuine surprise, uniform emotional register, compulsive closure from humans rating resolved text higher. His test: does it sound like someone, or like no one in particular?
+5. Nerdbot (2026-07-23), partly promotional. Observations valid as practitioner signals (three-part lists, over-hedged sentences, frictionless smoothness), but the piece funnels toward a "HumanTone" humanizer product. Field observation, not evidence.
+
+## 2. Three mechanisms of unease
+
+M1 Fluency-truth gap. People learn to read processing fluency as a cue to truth; the correlation is Bayesian-defensible (Reber and Unkelbach 2010). Repetition raises felt truth logarithmically (Hassan and Barber 2021). AI text maximizes fluency while collapsing the verified-truth ratio backing the cue. The alarm fires because the cue stopped working, not because of fluency itself. (Also: Unkelbach 2007, reversibility; Reber, Schwarz, Winkielman 2004; Wanke and Hansen 2015, relative fluency; Ecker et al. 2022 review.)
+
+M2 Statistical uniformity. "Burstiness" and "perplexity" are detector-community terms; the academic counterpart is low-surprisal text. Next-token optimization pulls output toward the distributional center (Feuerriegel et al. 2023) and narrows diversity across creative fields (Hsu and Bechky 2024, screenwriters; Crothers et al. 2023 detection survey; Boussioux et al. 2024: human crowds more novel, human-AI more viable). Reading fatigue tracks averaged predictability more than uniform sentence length.
+
+M3 Missing perspective, shallow heuristics. Readers are poor at spotting AI text by voice alone. Jakesch et al. (2023, PNAS, N=4,600): intuitions treating first-person pronouns, contractions, and family topics as human signals are flawed and gameable ("more human than human"). Provenance labels dominate evaluation: Bellaiche et al. (2023), a "human-created" label on the same AI artwork raised every rating. Missing perspective is an evidential void before an aesthetic one. (Also Jakesch et al., CHI 2023: opinionated models shift users' own views.)
+
+## 3. Counter-evidence
+
+1. AI poetry was rated MORE favorably. Porter and Machery (2024, Scientific Reports, 16,340 judgments): non-experts classified AI poems below chance (46.6%) and rated them higher on rhythm and beauty, misreading human complexity as AI-style incoherence. Aversion is expertise- and genre-dependent; for lay readers the detect-then-reject sequence can run in reverse.
+2. The cause may be the label, not the text. Bellaiche et al. (2023): the same AI artwork labeled "human-created" scored higher on liking, beauty, profundity, worth. Jakesch et al. (2023): humanness heuristics are gameable with a few pronouns. Readers reject cues that lead them to believe text is AI, more than AI tells per se. The alarm is a provenance inference engine, not a meaning checker.
+3. Importing LLM psychology is contested. Lehr et al.'s "GPT-4o shows cognitive dissonance" vs Cummins, Elson and Hussey: "neither cognitive nor dissonant" — context windows suffice (PNAS). Unresolved. Caution before carrying such narratives into reader-experience claims.
+
+## 4. Gap ledger (LLM gap analysis over the full corpus)
+
+1. Missing literature: no paper directly measures reader aversion to AI text as such; everything is writer-, model-, or platform-side.
+2. Unanswered question: whether disclosing AI authorship causally changes trust, engagement, or quality judgments in reading contexts (label experiments exist only for artworks).
+3. Connection gap: writer-side effects (opinion shifts in co-writing, cognitive offloading, dissonance) are never linked to downstream reader reactions.
+4. Methodology gap: all self-report and single-session; no longitudinal or behavioral measures (reading time, sharing, bounce). Discontinuance studies (Frontiers 2026; IJHCI 2025) measure quitting a platform, not abandoning a text — a construct mismatch.
+
+## 5. For writers
+
+- Restore friction: register shifts, blunt fragments, unresolved endings read as human signals (Reitz). Not to spoof a detector but to bring back the cues readers judge by.
+- Design the label: the same text is judged differently under different provenance beliefs (Bellaiche). Disclosure is trust design; its causal effect in reading contexts is untested (gap 2). Disclose, and do more than disclose.
+- Voice has effects: co-writing with an opinionated model shifted users' own views (Jakesch et al., CHI 2023). Whose voice the text carries matters.
+- Distrust fluency: smoothness raises felt truth without verification behind it (M1). The goal of editing is realignment between the cue and the substance.
+
+## 6. Method
+
+86 papers collected and indexed from arXiv and OpenAlex with research-agent 0.2.6 (CLI), classified by theme, 15 triage-rated. Citations verified against primary records and DOIs via Exa web search. Gap analysis over the full corpus with an LLM pass. Generated September 21, 2026.
+
+====================================================================
+PART 2 — KOREAN (한국어)
+====================================================================
+
+## 1. 입력 소스 검증: 무엇이 실재하는가
+
+초기 분석에 [Verified]로 표기된 다섯 소스를 따로따로 확인했다. 다섯 모두 실재했다. 문제는 존재 여부가 아니라 정확도였다. 하나는 제목이 잘못 인용됐고 또 하나는 논문이 하지 않은 주장이 요약돼 있었다.
+
+1. Frontiers in Psychology (2026), 제목이 다르다. 실제 제목: "Risk Perception and Discontinuation Intention of Generative AI: Mediating Effect of Cognitive Fatigue and Moderating Effect of AI Dependence" (doi:10.3389/fpsyg.2026.1879080, n=426). 오정보와 프라이버시 위험에 대한 인식이 AI 불안을 높인다. 인지 피로가 그 관계를 매개하고, AI 의존도는 이탈 의도로 가는 길을 약화시킨다. 교정: 논문은 읽기 유창성을 재지 않았다. 다루는 주제는 독서 중단이 아니다. 생성형 AI 플랫폼을 떠나려는 의도다.
+2. Seran 등 (2025). 페스팅거의 인지 부조화 이론을 생성형 AI 글쓰기에 적용한 개념 프레임. "AIgiarism"의 양가감정과 효율·정당성 갈등을 다룬다. 데이터가 없는 논의 논문이고, 다루는 사람들도 독자가 아니다. AI 도구로 글을 쓰는 학생들이다.
+3. Lehr 등, PNAS (2025), 초기 분석과 실제 내용이 다르다. 실제 내용: 사전등록된 유도 순응 실험(총 1,050 시행)에서 GPT-4o는 푸틴 에세이를 쓴 뒤 자기 태도를 그쪽으로 기울였고, "스스로 선택했다"는 느낌을 심어주자 변화가 더 벌어졌다. 교정: "기계적 확신과 공허함의 간극을 증명"은 이 논문의 주장이 아니다. 논쟁 중: Cummins 등(doi:10.1073/pnas.2517912122)은 컨텍스트 윈도우 효과로 충분하다고 반박, Lehr 등 재반박(doi:10.1073/pnas.2518613122).
+4. Kenneth Reitz 에세이. 요약 정확: 깨끗한 단락, 고른 어휘 분포, 조합해 낸 놀라움과 진짜 놀라움, 한결같은 정서 톤, 결말 강박. 감별 기준: 누군가의 목소리인가, 아무도 아닌 목소리인가.
+5. Nerdbot (2026-07-23). 관찰은 실무 신호로 유효하나 HumanTone 휴머나이저 홍보가 섞인 콘텐츠 마케팅. 학술 근거가 아니다.
+
+## 2. 이질감의 세 가지 메커니즘
+
+M1 유창성과 진실성의 괴리. 인간은 처리 유창성을 진실의 단서로 배운다(Reber와 Unkelbach 2010, 베이즈적으로도 합리적). 반복은 진실감을 로그 곡선으로 끌어올린다(Hassan과 Barber 2021). AI 텍스트는 유창성을 극대화하면서 그 유창성이 받쳐주던 검증된 진실의 비율을 무너뜨렸다. 독자의 위화감은 유창성 자체에서 오는 게 아니다. 단서가 더는 작동하지 않는다는 감지에서 온다.
+
+M2 통계적 균일성. 버스티니스와 퍼플렉시티는 탐지 커뮤니티 용어다. 학술적 대응물은 서프라이저가 낮은 텍스트다. next-token 최적화는 출력을 분포의 중심으로 끌어당기고(Feuerriegel 등 2023) 창작 생태계의 다양성을 줄인다(Hsu와 Bechky 2024). 독서 피로는 문장 길이가 고르다는 데서보다 예측 가능성이 평균화된다는 데서 온다.
+
+M3 관점의 부재와 얕은 휴리스틱. 목소리만으로는 독자가 AI 텍스트를 잘 가려내지 못한다. Jakesch 등(2023, PNAS, N=4,600): 1인칭 대명사, 줄임말, 가족 이야기를 인간의 신호로 여기는 직관은 결함이 있고 조작 가능. 평가를 지배하는 것은 텍스트보다 출처 라벨이다(Bellaiche 등 2023, 같은 그림에 "인간 창작" 라벨만으로 모든 평가 상승). 관점이 빠진 글의 문제는 미학을 넘어 판단 단서의 공백이다.
+
+## 3. 반대 증거
+
+1. AI 시가 더 좋게 평가받았다. Porter와 Machery(2024, 16,340 판단): 비전문가는 AI 시를 찬스 이하(46.6%)로 식별, 리듬과 아름다움에서 더 높게 평가. 인간 시의 복잡성을 AI식 어수선함으로 오해. 이질감은 전문성·장르 의존적.
+2. 혐오의 씨앗은 라벨. 같은 텍스트도 출처 믿음에 따라 평가가 달라진다. 독자가 거부하는 건 "AI 티" 자체라기보다 "AI라고 믿게 되는 단서"다. 이 반응은 의미 검증이라기보다 출처 추측이다.
+3. LLM 심리학 수입은 논쟁 중. "GPT-4o 인지 부조화" vs "인지적이지도 않고 부조화도 아니다". 미결.
+
+## 4. 남은 갭 (LLM 갭 분석 결과)
+
+1. 독자의 AI 텍스트 혐오를 직접 잰 연구가 없다(전부 작성자·모델·플랫폼 측면).
+2. AI 집필 고지가 신뢰·몰입·품질 평가를 인과적으로 어떻게 바꾸는지 재지 않았다(라벨 실험은 예술에만 존재).
+3. 작성자 쪽 효과(견해 이동·인지적 위임·부조화)와 독자 쪽 반응을 이은 연구가 없다.
+4. 행동·종단 측정(독서 시간·공유·이탈)이 없다. 이탈 연구들은 플랫폼 해지를 잴 뿐 독서 중단은 재지 않는다. 측정 대상 자체가 어긋난다.
+
+## 5. 글쓰기에 주는 시사점
+
+- 마찰을 살려라: 레지스터 전환, 단문, 매듭짓지 않은 마무리는 인간의 신호로 읽힌다. 목적은 탐지기 속이기가 아니라 판단 단서의 복원이다.
+- 라벨 설계가 평가를 좌우한다: 고지는 신뢰 설계 문제다. 공개하되 공개만으로 끝내지 말라.
+- 목소리는 효과를 낳는다: 견해 실린 모델과 공동집필하면 사용자의 견해가 움직였다. 그 목소리가 누구의 것인지가 중요하다.
+- 유창성을 의심하라: 매끄러움은 검증 없이 진실감을 올리는 단서다. 윤문의 목표는 단서와 실체를 다시 맞추는 것이다.
+
+## 6. 방법
+
+research-agent 0.2.6 CLI로 arXiv와 OpenAlex에서 86편을 모아 인덱싱하고 주제별로 나눈 뒤 일부에만 평점을 달았다. 인용 검증은 Exa 웹 검색으로 원문과 DOI를 대조했다. 갭 분석은 코퍼스 전체를 대상으로 LLM으로 돌렸다. 2026년 9월 21일 생성.
