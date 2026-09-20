@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Uncanny Valley of AI Writing — Reader Aversion, Verified / AI 글쓰기의 불쾌한 골짜기</title>
-<meta name="description" content="A fact-checked research dossier on why readers recoil from AI-generated writing — 86 papers, verified sources, evidence map, and open gaps.">
+<title>The Uncanny Valley of AI Writing / AI 글쓰기의 불쾌한 골짜기</title>
+<meta name="description" content="A fact-checked research dossier on why readers turn away from AI-generated writing: 86 papers, verified sources, an evidence map, and open gaps.">
 <style>
   :root{
     --paper:#f7f3ec; --paper-2:#efe9de; --ink:#211d17; --ink-2:#57503f; --muted:#8b8270;
@@ -17,12 +17,11 @@
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.75}
+  body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.8}
   ::selection{background:var(--crimson);color:#fff}
   .wrap{max-width:880px;margin:0 auto;padding:0 28px}
   .mono{font-family:var(--mono)}
   a{color:var(--blue)}
-  .en,.ko{display:block}
   body.lang-en .ko{display:none}
   body.lang-ko .en{display:none}
 
@@ -37,8 +36,8 @@
   header.hero{padding:110px 0 64px;border-bottom:2px solid var(--ink)}
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--crimson)}
   h1{font-size:clamp(34px,6vw,58px);line-height:1.12;font-weight:700;margin:18px 0 6px;letter-spacing:-.01em}
-  h1 .sub{display:block;font-size:.44em;font-weight:400;color:var(--ink-2);margin-top:10px;line-height:1.4}
-  .standfirst{font-size:20px;color:var(--ink-2);max-width:640px;margin-top:26px;font-style:italic}
+  h1 .sub{display:block;font-size:.44em;font-weight:400;color:var(--ink-2);margin-top:12px;line-height:1.5}
+  .standfirst{font-size:19px;color:var(--ink-2);max-width:640px;margin-top:26px}
   .stats{display:flex;flex-wrap:wrap;gap:0;margin-top:38px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .stat{padding:14px 26px 14px 0;margin-right:26px;border-right:1px solid var(--line)}
   .stat:last-child{border-right:0}
@@ -86,7 +85,6 @@
   .pcard .stars{color:var(--crimson);letter-spacing:2px;font-size:12px}
   .pcard .abs{font-size:14px;color:var(--ink-2);margin-top:8px;display:none}
   .pcard.open .abs{display:block}
-  .pcard summary-row{cursor:pointer}
   .count{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:14px}
 
   /* counter / gaps */
@@ -101,8 +99,7 @@
 
   ul.tight{list-style:none}
   ul.tight li{padding:10px 0 10px 22px;border-bottom:1px dotted var(--line);position:relative;font-size:15.5px;color:var(--ink-2)}
-  ul.tight li:before{content:"—";position:absolute;left:0;color:var(--crimson)}
-  ul.tight b{color:var(--ink)}
+  ul.tight li:before{content:"·";position:absolute;left:6px;color:var(--crimson)}
   ul.tight li:last-child{border-bottom:0}
 
   footer{padding:48px 0 80px;font-size:13.5px;color:var(--muted)}
@@ -123,16 +120,16 @@
     <h1>
       <span class="ko">AI 글쓰기의 불쾌한 골짜기</span>
       <span class="en">The Uncanny Valley of AI Writing</span>
-      <span class="sub"><span class="ko">독자는 왜 AI가 쓴 글에서 눈을 떠나는가 — 인용 검증 · 86편 문헌 · 증거 지도 · 열린 갭 4건</span><span class="en">Why readers turn away from AI-generated text — verified citations, 86 indexed papers, an evidence map, and four open gaps.</span></span>
+      <span class="sub"><span class="ko">독자는 왜 AI가 쓴 글에서 눈을 떠나는가. 다섯 개 인용 소스 검증, 문헌 86편, 증거 지도, 남은 갭 네 건.</span><span class="en">Why readers turn away from AI-generated text. Five cited sources verified, 86 papers indexed, an evidence map, and four open gaps.</span></span>
     </h1>
     <p class="standfirst">
-      <span class="ko">"문법은 완벽한데 왜 읽기를 멈추게 되는가." 이 질문에 대한 학술·현장 문헌을 2026-09-21 기준으로 수집·검증한 보고서. 입력 분석에 인용된 5개 소스를 전수 팩트체크했고, 그중 1개는 서지 정보 교정, 1개는 해석 교정이 필요했다.</span>
-      <span class="en">"The grammar is perfect — so why do I stop reading?" This dossier collects and fact-checks the academic and practitioner literature on that question as of 2026-09-21. All five sources cited in the input analysis were verified; one needed a bibliographic correction, one an interpretive one.</span>
+      <span class="ko">문법은 완벽한데 읽다가 멈추게 되는 이유. 이 질문과 관련된 학술 및 현장 문헌을 2026년 9월 21일 기준으로 수집하고 검증했다. 원래 분석문에 인용된 다섯 소스를 모두 원문과 대조했고, 그중 두 개는 서지 표기과 해석에 교정이 필요했다.</span>
+      <span class="en">The grammar is perfect, yet somewhere along the way you stop reading. This dossier collects and checks the academic and practitioner literature behind that experience as of September 21, 2026. Every one of the five sources cited in the originating analysis was compared against its primary record. Two needed corrections, one to the bibliographic details and one to what the paper actually claims.</span>
     </p>
     <div class="stats">
       <div class="stat"><b>86</b><span><span class="ko">인덱스 논문</span><span class="en">papers indexed</span></span></div>
-      <div class="stat"><b>15</b><span><span class="ko">평점 부여</span><span class="en">peer-rated</span></span></div>
-      <div class="stat"><b>5/5</b><span><span class="ko">입력 소스 검증</span><span class="en">sources verified</span></span></div>
+      <div class="stat"><b>15</b><span><span class="ko">평점 부여</span><span class="en">triage-rated</span></span></div>
+      <div class="stat"><b>5/5</b><span><span class="ko">소스 검증</span><span class="en">sources verified</span></span></div>
       <div class="stat"><b>4</b><span><span class="ko">열린 갭</span><span class="en">open gaps</span></span></div>
       <div class="stat"><b>2</b><span><span class="ko">논쟁 중인 주장</span><span class="en">contested claims</span></span></div>
     </div>
@@ -151,93 +148,93 @@
 
 <!-- 1. VERIFICATION -->
 <section id="verify">
-  <h2><span class="no">01</span><span class="ko">입력 소스 검증 — 무엇이 실재하는가</span><span class="en">Source Verification — What Actually Exists</span></h2>
-  <p class="lead"><span class="ko">원래 분석문에 [Verified]로 표기된 5개 소스를 독립 확인했다. 5개 모두 실재하지만, 2개는 표기·해석에 교정이 필요하다. 골칫거리는 존재 여부가 아니라 정확도였다.</span>
-  <span class="en">All five sources tagged [Verified] in the input analysis were independently checked. All five exist — but two needed corrections. The problem was never existence; it was accuracy.</span></p>
+  <h2><span class="no">01</span><span class="ko">입력 소스 검증, 무엇이 실재하는가</span><span class="en">Source Verification: What Actually Exists</span></h2>
+  <p class="lead"><span class="ko">원래 분석문에 [Verified]로 표기된 다섯 소스를 독립적으로 확인했다. 다섯 개 모두 실재했다. 문제는 존재 여부가 아니라 서지 정보와 해석의 정확도였다.</span>
+  <span class="en">All five sources tagged [Verified] in the input analysis were checked independently. All five exist. What failed was not existence but accuracy. One citation carried the wrong title, and one summary described a claim the paper never makes.</span></p>
 
   <div class="vcard">
     <span class="chip ok">Confirmed</span>
-    <h3><span class="ko">1. Frontiers in Psychology (2026) — 실재, 제목 상이</span><span class="en">1. Frontiers in Psychology (2026) — real, different title</span></h3>
+    <h3><span class="ko">1. Frontiers in Psychology (2026), 제목이 다르다</span><span class="en">1. Frontiers in Psychology (2026), under a different title</span></h3>
     <div class="src">Risk Perception and Discontinuation Intention of Generative AI: Mediating Effect of Cognitive Fatigue and Moderating Effect of AI Dependence · doi:10.3389/fpsyg.2026.1879080 · 2026-07 · n=426</div>
-    <p><span class="ko">오정보·프라이버시 리스크 인지가 AI 불안을 높이고, 인지 피로가 매개하며, AI 의존도가 이탈 의도와의 관계를 음의 조절한다 — C-A-B 프레임의 실증 연구. 서지사항은 유효.</span>
-    <span class="en">An empirical C-A-B study: misinformation and privacy risk perception raise AI anxiety, cognitive fatigue mediates, and AI dependence negatively moderates the path to discontinuance. Bibliographically sound.</span></p>
-    <p class="fixnote"><span class="ko"><b>교정:</b> 원문 분석의 "독해 유창성 대비 환각 감지" 서술은 이 논문이 측정하지 않는 것 — 논문은 읽기 유창성을 측정하지 않았다. 플랫폼 이탈 의도 연구이지 읽기 중단 연구가 아니다.</span>
-    <span class="en"><b>Correction:</b> The input's "reading fluency vs. detected hallucination" framing describes something the paper never measured. It studies platform discontinuance intention, not reading abandonment.</span></p>
+    <p><span class="ko">오정보와 프라이버시에 대한 리스크 인지가 AI 불안을 높이고, 인지 피로가 그 관계를 매개하며, AI 의존도가 이탈 의도로 가는 경로를 약화시킨다는 실증 연구다. C-A-B(인지, 정동, 행동) 프레임을 따르며 표본은 426명이다.</span>
+    <span class="en">An empirical study in the cognition-affect-behavior framework (n=426): perceiving misinformation and privacy risks raises AI anxiety, cognitive fatigue mediates that path, and dependence on AI weakens the link to discontinuance.</span></p>
+    <p class="fixnote"><span class="ko"><b>교정.</b> 원문 분석은 이 논문을 "독해 유창성 대비 환각 감지"로 서술하지만 논문은 읽기 유창성을 측정하지 않았다. 다루는 것도 독서 중단이 아니라 생성형 AI 플랫폼의 이탈 의도다.</span>
+    <span class="en"><b>Correction.</b> The input frames this paper as being about reading fluency versus detected hallucinations. It measures no such thing. It is about users' intention to quit generative AI services, not to stop reading a text.</span></p>
   </div>
 
   <div class="vcard">
     <span class="chip ok">Confirmed</span>
-    <h3><span class="ko">2. Seran et al. (2025) — 실재, 개념 연구</span><span class="en">2. Seran et al. (2025) — real, conceptual</span></h3>
+    <h3><span class="ko">2. Seran 등 (2025), 데이터 없는 개념 연구</span><span class="en">2. Seran et al. (2025), conceptual, no data</span></h3>
     <div class="src">A conceptual exploration of generative AI-induced cognitive dissonance and its emergence in university-level academic writing · Front. Artif. Intell. · doi:10.3389/frai.2025.1573368 · arXiv:2502.05698</div>
-    <p><span class="ko">페스팅거 인지 부조화 이론을 GenAI 글쓰기에 적용한 개념 프레임. "AIgiarism"(AI 표절)의 양가성, 효율 vs 정당성 충돌을 다룸. <b>단, 데이터 없는 논의 논문</b>이며 대상은 독자가 아니라 <b>글쓰는 학생</b>이다.</span>
-    <span class="en">Applies Festinger's cognitive dissonance theory to GenAI writing: the ambivalence of "AIgiarism," efficiency vs. integrity. <b>Note:</b> it is a conceptual paper with no data, and its subjects are <b>writing students</b>, not readers.</span></p>
+    <p><span class="ko">페스팅거의 인지 부조화 이론을 생성형 AI 글쓰기에 적용한 개념 프레임이다. "AIgiarism"(AI 표절)을 둘러싼 양가감정과, 효율과 정당성 사이의 충돌을 다룬다. 다만 데이터가 없는 논의 논문이고, 다루는 대상은 독자가 아니라 AI 도구로 글을 쓰는 학생들이다.</span>
+    <span class="en">Applies Festinger's cognitive dissonance theory to writing with generative AI: the ambivalence of "AIgiarism" and the collision between efficiency and integrity. It is a conceptual paper without data, and its subjects are students who write with these tools, not the people reading what they produce.</span></p>
   </div>
 
   <div class="vcard">
-    <span class="chip fix">Confirmed — interpretation corrected</span>
-    <h3><span class="ko">3. Lehr et al., PNAS (2025) — 실재, 원문 해석이 다른 논문을 서술</span><span class="en">3. Lehr et al., PNAS (2025) — real, but the input describes a different paper</span></h3>
+    <span class="chip fix">Confirmed, corrected reading</span>
+    <h3><span class="ko">3. Lehr 등, PNAS (2025), 원문 분석이 다른 논문을 서술</span><span class="en">3. Lehr et al., PNAS (2025), the input describes a different paper</span></h3>
     <div class="src">Kernels of selfhood: GPT-4o shows humanlike patterns of cognitive dissonance moderated by free choice · doi:10.1073/pnas.2501823122 · Lehr, Saichandran, Harmon-Jones, Vitali, Banaji</div>
-    <p><span class="ko">실제 내용: GPT-4o가 푸틴 찬반 에세이를 <b>쓴 후 자신의 태도를 에세이 방향으로 바꾸고</b>, "스스로 선택한 것"이라는 환상이 효과를 증폭시킨다는 유도 순응 패러다임 연구(사전등록, 1,050 시행). 인간보다 효과 크기가 큼.</span>
-    <span class="en">What it actually shows: in a preregistered induced-compliance paradigm (1,050 trials), GPT-4o <b>shifts its own attitudes toward the direction of an essay it just wrote</b> about Putin — and the shift is amplified by an illusion of free choice, with effect sizes larger than typical human studies.</span></p>
-    <p class="fixnote"><span class="ko"><b>교정:</b> 원문 분석의 "기계적 확신과 내용의 공허함 사이 간극을 통계적으로 증명"은 이 논문의 주장이 아니다. 또한 이 결과는 논쟁 중 — Cummins 등의 논평(doi:10.1073/pnas.2517912122)은 컨텍스트 윈도우 효과로 설명 가능하다고 반박했고, Lehr 등이 재반박(doi:10.1073/pnas.2518613122)했다.</span>
-    <span class="en"><b>Correction:</b> The input's "statistically proves the gap between mechanical overconfidence and empty content" is not this paper's claim. The finding is also <b>contested</b>: Cummins et al.'s commentary (doi:10.1073/pnas.2517912122) argues context-window effects suffice; Lehr et al. rebutted (doi:10.1073/pnas.2518613122).</span></p>
+    <p><span class="ko">실제 내용은 이렇다. 사전등록된 유도 순응 실험(1,050 시행)에서 GPT-4o는 푸틴을 찬양하거나 비난하는 에세이를 쓴 뒤 자신의 태도를 그 방향으로 바꿨고, 어느 에세이를 쓸지 "스스로 선택했다"는 환상을 주면 태도 변화가 더 커졌다. 효과 크기는 인간 피험자 연구에서 흔한 수준을 훨씬 넘었다.</span>
+    <span class="en">In two preregistered induced-compliance studies (1,050 trials), GPT-4o shifted its expressed attitudes toward the direction of an essay it had just written about Putin, and the shift grew larger when the model was given an illusion of having chosen which essay to write. The effect sizes exceeded what is typical in human studies.</span></p>
+    <p class="fixnote"><span class="ko"><b>교정.</b> 원문 분석의 "기계적 확신과 내용의 공허함 사이 간극을 통계적으로 증명"은 이 논문의 주장이 아니다. 결과도 논쟁 중이다. Cummins 등의 논평(doi:10.1073/pnas.2517912122)은 컨텍스트 윈도우 효과만으로 충분히 설명된다고 반박했고, Lehr 등이 선택 조작을 추가한 재실험으로 응수했다(doi:10.1073/pnas.2518613122).</span>
+    <span class="en"><b>Correction.</b> "Statistically proves the gap between mechanical overconfidence and empty content" is not this paper's claim, and the finding is contested. A commentary by Cummins et al. (doi:10.1073/pnas.2517912122) argues context-window effects are explanation enough, and Lehr et al. replied with a new choice-manipulation study (doi:10.1073/pnas.2518613122).</span></p>
   </div>
 
   <div class="vcard">
     <span class="chip ok">Confirmed</span>
-    <h3><span class="ko">4. Kenneth Reitz, "The Uncanny Valley of AI Writing" — 실재</span><span class="en">4. Kenneth Reitz, "The Uncanny Valley of AI Writing" — real</span></h3>
+    <h3><span class="ko">4. Kenneth Reitz, "The Uncanny Valley of AI Writing"</span><span class="en">4. Kenneth Reitz, "The Uncanny Valley of AI Writing"</span></h3>
     <div class="src">kennethreitz.org · essay (undated) · kennethreitz/kennethreitz.org on GitHub</div>
-    <p><span class="ko">원문 분석의 요지가 정확: 지나치게 깨끗한 단락, 고르게 분산된 어휘("특정인의 목소리가 아닌"), 결합적 놀라움 vs 진짜 놀라움, 일관된 정서 레지스터, RLHF 기원의 강박적 마무리(compulsive closure). 판별 기준 제시: "누군가의 목소리인가, 아무도 아닌 목소리인가."</span>
-    <span class="en">The input's summary is accurate: too-clean paragraphs, evenly distributed vocabulary ("the sound of no one in particular"), combinatorial vs. genuine surprise, consistent emotional register, and RLHF-born compulsive closure. His test: does it sound like <i>someone</i>, or like no one in particular?</span></p>
+    <p><span class="ko">원문 분석의 요약이 정확하다. 지나치게 깨끗한 단락, 고르게 분산된 어휘, 결합적 놀라움과 진짜 놀라움의 구분, 글 전체에 일정한 정서 톤, 인간이 해결된 텍스트를 더 높게 평가하는 데서 오는 강박적 마무리. 저자의 판별 기준은 한 줄이다. 누군가의 목소리로 들리는가, 아무도 아닌 목소리로 들리는가.</span>
+    <span class="en">The input's summary is accurate: too-clean paragraphs, evenly distributed vocabulary, combinatorial versus genuine surprise, a uniform emotional register, and the compulsive closure that comes from humans rating resolved text more highly. His test fits in one line. Does it sound like someone, or like no one in particular?</span></p>
   </div>
 
   <div class="vcard">
-    <span class="chip low">Confirmed — low authority</span>
-    <h3><span class="ko">5. Nerdbot (2026-07-23) — 실재, 툴 홍보 성격</span><span class="en">5. Nerdbot (2026-07-23) — real, but promotional</span></h3>
+    <span class="chip low">Confirmed, low authority</span>
+    <h3><span class="ko">5. Nerdbot (2026-07-23), 제품 홍보가 섞인 글</span><span class="en">5. Nerdbot (2026-07-23), partly promotional</span></h3>
     <div class="src">The Uncanny Valley of Writing: Why AI Text Feels Off and How to Fix It · nerdbot.com · 2026-07-23</div>
-    <p><span class="ko">3단 병렬 나열 남발, 완충된 긴 문장, 마찰 없는 매끄러움 — 지적 자체는 실무자 관찰로 유효. 다만 글 후반부가 휴머나이저 툴("HumanTone") 홍보로 흐르는 <b>콘텐츠 마케팅 성격</b>. 학술 근거가 아닌 실무 신호로만 취급할 것.</span>
-    <span class="en">Its observations — compulsive three-part lists, over-hedged long sentences, frictionless smoothness — hold as practitioner signals. But the piece funnels toward a "HumanTone" humanizer product: <b>content marketing</b>. Treat as field observation, not evidence.</span></p>
+    <p><span class="ko">3단 병렬 나열, 완충된 긴 문장, 마찰 없는 매끄러움이라는 관찰 자체는 실무자 시각에서 유효하다. 다만 글 후반부는 휴머나이저 제품(HumanTone) 홍보로 흘러가는 콘텐츠 마케팅이어서, 학술 근거로 들 것이 아니라 실무 신호 정도로 받아들여야 한다.</span>
+    <span class="en">Its observations, including compulsive three-part lists, over-hedged long sentences, and frictionless smoothness, hold up as practitioner signals. But the piece funnels toward a "HumanTone" humanizer product, so it belongs in the field-observation column, not the evidence column.</span></p>
   </div>
 </section>
 
 <!-- 2. MECHANISMS -->
 <section id="mech">
-  <h2><span class="no">02</span><span class="ko">이질감의 세 가지 메커니즘 — 증거와의 접속</span><span class="en">Three Mechanisms of Unease, Connected to Evidence</span></h2>
-  <p class="lead"><span class="ko">원래 분석의 3대 원인은 방향이 맞다. 다만 학술 문헌과 정확히 접속시키면 그림이 더 정교해진다: 유창성은 원래 신뢰의 신호였고, 문제는 그 신호가 학습된 생태학적 상관을 깨뜨릴 때 생긴다.</span>
-  <span class="en">The input's three structural causes point the right way. Mapped against the literature, the picture sharpens: fluency evolved as a cue for trust — the trouble starts when the cue breaks its learned correlation with truth.</span></p>
+  <h2><span class="no">02</span><span class="ko">이질감의 세 가지 메커니즘</span><span class="en">Three Mechanisms of Unease</span></h2>
+  <p class="lead"><span class="ko">원래 분석이 꼽은 세 가지 원인은 대체로 올바른 방향을 가리킨다. 문헌과 대조하면 그림이 더 정교해진다. 유창성은 원래 신뢰로 이어지던 단서였고, 문제는 그 단서가 진실과의 학습된 상관관계를 깨뜨렸을 때 시작된다.</span>
+  <span class="en">The three causes named in the input point in the right direction. Set against the literature, the picture becomes more precise. Fluency used to be a cue that led to trust, and the trouble begins when the cue breaks its learned correlation with truth.</span></p>
 
   <div class="mech">
     <div class="mcard">
-      <h3><span class="ko">M1 · 유창성–진실성 괴리</span><span class="en">M1 · The Fluency–Truth Gap</span></h3>
-      <p><span class="ko">인간은 처리 유창성(processing fluency)을 진실의 단서로 학습한다(Reber·Unkelbach 2010: 유창성–진실 상관은 베이즈적으로 합리적 단서). 반복은 진실감을 로그적으로 올린다(Hassan &amp; Barber 2021). AI 텍스트는 유창성은 극대화했지만 그 유창성이 보증하던 "검증된 진실" 비율을 깨뜼렸다. 독자의 경보는 유창성 자체가 아니라 <b>단서의 오용 감지</b>다.</span>
-      <span class="en">People learn to read processing fluency as a cue to truth (Reber &amp; Unkelbach 2010: the fluency–truth correlation is an epistemically justified, Bayesian cue). Repetition raises felt truth logarithmically (Hassan &amp; Barber 2021). AI text maximizes fluency while breaking the correlation that licensed the cue. The reader's alarm is not fluency itself — it is <b>the detection of a misfiring cue</b>.</span></p>
+      <h3><span class="ko">M1 · 유창성과 진실성의 괴리</span><span class="en">M1 · The Fluency-Truth Gap</span></h3>
+      <p><span class="ko">인간은 처리 유창성을 진실의 단서로 학습한다. Reber와 Unkelbach(2010)는 이 상관관계가 베이즈적으로도 합리적인 단서임을 논증했다. 반복 노출은 진실감을 로그 곡선으로 올린다(Hassan과 Barber 2021). AI 텍스트는 유창성을 극대화하면서 그 유창성이 뒷받침하던 검증된 진실의 비율을 무너뜨렸다. 독자가 느끼는 경보는 유창성 그 자체가 아니라, 단서가 오작동한다는 감지에서 나온다.</span>
+      <span class="en">People learn to read processing fluency as a cue to truth, and Reber and Unkelbach (2010) argue the correlation is even Bayesian-defensible. Repetition raises felt truth along a logarithmic curve (Hassan and Barber 2021). AI text maximizes fluency while collapsing the ratio of verified truth that used to back the cue. The reader's alarm is not about fluency itself. It fires because the cue has stopped working.</span></p>
       <ul class="ev">
-        <li><i>10.1037</i> Unkelbach (2007) — fluency–truth learning is reversible</li>
-        <li><i>10.1207</i> Reber, Schwarz &amp; Winkielman (2004) — fluency drives pleasure &amp; judged truth</li>
-        <li><i>10.1177</i> Wänke &amp; Hansen (2015) — relative, not absolute, fluency</li>
-        <li><i>10.1038</i> Ecker et al. (2022) — misinformation belief drivers, review</li>
+        <li><i>10.1037</i> Unkelbach (2007), fluency-truth learning is reversible</li>
+        <li><i>10.1207</i> Reber, Schwarz, Winkielman (2004), fluency drives pleasure and judged truth</li>
+        <li><i>10.1177</i> Wänke, Hansen (2015), relative rather than absolute fluency</li>
+        <li><i>10.1038</i> Ecker et al. (2022), review of misinformation belief</li>
       </ul>
     </div>
     <div class="mcard">
       <h3><span class="ko">M2 · 통계적 균일성</span><span class="en">M2 · Statistical Uniformity</span></h3>
-      <p><span class="ko">원문의 "버스티니스·퍼플렉시티"는 탐지 커뮤니티의 속어이고, 학술적 대응물은 <b>낮은 서프라이저(surprisal)의 텍스트</b>다. next-token 예측 최적화는 분포의 중심으로 수렴시키고(Feuerriegel et al. 2023), 창작 생태계 전체의 다양성을 줄인다(Hsu &amp; Bechky 2024: 스크리인라이터 사례). 독서 피로의 원인은 문장 길이의 균일성이라기보다 <b>예측 가능성의 평균화</b>다.</span>
-      <span class="en">"Burstiness and perplexity" are detector-community folklore; the academic counterpart is <b>text of low surprisal</b>. Next-token prediction optimization pulls output toward the distributional center (Feuerriegel et al. 2023) and narrows collective diversity (Hsu &amp; Bechky 2024, on screenwriters). Reading fatigue tracks <b>averaged predictability</b> more than sentence-length uniformity.</span></p>
+      <p><span class="ko">버스티니스와 퍼플렉시티는 탐지 커뮤니티의 용어고, 학술적 대응물은 서프라이저가 낮은 텍스트다. next-token 예측 최적화는 출력을 분포의 중심으로 끌어당기고(Feuerriegel 등 2023) 창작 생태계 전체의 다양성을 줄인다(Hsu와 Bechky 2024의 각본가 사례). 독서 피로의 원인은 문장 길이의 균일성보다 예측 가능성의 평균화에 가깝다.</span>
+      <span class="en">"Burstiness" and "perplexity" are detector-community terms, and their academic counterpart is text of low surprisal. Optimizing for next-token prediction pulls output toward the middle of the distribution (Feuerriegel et al. 2023) and narrows diversity across creative fields (Hsu and Bechky 2024, on screenwriters). Reading fatigue tracks averaged predictability more than uniform sentence length.</span></p>
       <ul class="ev">
-        <li><i>10.1109</i> Crothers et al. (2023) — MGT detection survey: likelihood traps</li>
-        <li><i>10.1177</i> Hsu &amp; Bechky (2024) — homogenization in creative industries</li>
-        <li><i>10.1007</i> Feuerriegel et al. (2023) — generative AI, prediction objective</li>
-        <li><i>10.1287</i> Boussioux et al. (2024) — human crowd novelty &gt; human-AI; viability &lt;</li>
+        <li><i>10.1109</i> Crothers et al. (2023), detection survey, likelihood traps</li>
+        <li><i>10.1177</i> Hsu, Bechky (2024), homogenization in creative industries</li>
+        <li><i>10.1007</i> Feuerriegel et al. (2023), generative AI's prediction objective</li>
+        <li><i>10.1287</i> Boussioux et al. (2024), human crowd more novel, human-AI more viable</li>
       </ul>
     </div>
     <div class="mcard">
-      <h3><span class="ko">M3 · 관점 부재와 얕은 휴리스틱</span><span class="en">M3 · Missing Perspective &amp; Shallow Heuristics</span></h3>
-      <p><span class="ko">핵심 반전: 독자는 목소리로 AI를 <b>잘</b> 찾아내지 못한다. Jakesch 등(2023, PNAS, N=4,600): 1인칭 대명사·줄임말·가족 화제를 "인간의 신호"로 믿는 직관적 휴리스틱은 결함 투성이이며 조작 가능("more human than human"). 평가는 텍스트보다 <b>출처 라벨</b>이 지배한다(Bellaiche et al. 2023: "인간 창작" 라벨만으로 모든 기준에서 선호 급등). 관점의 부재는 심미 문제가 아니라 <b>판단 단서의 공백</b>이다.</span>
-      <span class="en">The key inversion: readers are <b>bad</b> at spotting AI by voice. Jakesch et al. (2023, PNAS, N=4,600): intuitive cues — first-person pronouns, contractions, family topics — are flawed and manipulable ("more human than human"). Evaluation is dominated by <b>provenance labels</b>, not text (Bellaiche et al. 2023: a "human-created" label alone inflates every rating). Missing perspective is an evidential void, not just an aesthetic one.</span></p>
+      <h3><span class="ko">M3 · 관점의 부재와 얕은 휴리스틱</span><span class="en">M3 · Missing Perspective, Shallow Heuristics</span></h3>
+      <p><span class="ko">여기에 반전이 있다. 독자는 목소리만으로 AI 텍스트를 잘 찾아내지 못한다. Jakesch 등(2023, PNAS, N=4,600)에 따르면 1인칭 대명사, 줄임말, 가족 이야기를 인간의 신호로 여기는 직관은 결함이 있고 조작도 가능해서 "인간보다 더 인간적인" 텍스트가 나온다. 평가에서는 텍스트보다 출처 라벨이 지배한다. Bellaiche 등(2023)에서는 같은 그림에 "인간 창작" 라벨만 붙여도 모든 평가 항목이 올랐다. 관점의 부재는 미학 문제라기보다 판단 단서의 공백이다.</span>
+      <span class="en">Here comes the inversion. Readers are poor at spotting AI text by voice alone. According to Jakesch et al. (2023, PNAS, N=4,600), the intuitions that treat first-person pronouns, contractions, and family topics as human signals are flawed and gameable, which allows "more human than human" text. Provenance labels dominate evaluation over the text itself. In Bellaiche et al. (2023), attaching a "human-created" label to the same artwork raised every rating. Missing perspective is an evidential void before it is an aesthetic one.</span></p>
       <ul class="ev">
-        <li><i>10.1073</i> Jakesch, Hancock &amp; Naaman (2023) — flawed heuristics, N=4,600</li>
-        <li><i>10.1186</i> Bellaiche et al. (2023) — label bias in art appraisal</li>
-        <li><i>10.1145</i> Jakesch et al. (2023, CHI) — opinionated LM shifts user views</li>
-        <li><i>kennethreitz.org</i> Reitz — "someone vs. no one in particular"</li>
+        <li><i>10.1073</i> Jakesch, Hancock, Naaman (2023), flawed heuristics, N=4,600</li>
+        <li><i>10.1186</i> Bellaiche et al. (2023), label bias in art appraisal</li>
+        <li><i>10.1145</i> Jakesch et al. (2023, CHI), opinionated models shift user views</li>
+        <li><i>kennethreitz.org</i> Reitz, "someone vs. no one in particular"</li>
       </ul>
     </div>
   </div>
@@ -245,9 +242,9 @@
 
 <!-- 3. EVIDENCE MAP -->
 <section id="evidence">
-  <h2><span class="no">03</span><span class="ko">증거 지도 — 인덱스된 86편</span><span class="en">Evidence Map — 86 Indexed Papers</span></h2>
-  <p class="lead"><span class="ko">research-agent CLI로 arXiv·OpenAlex에서 수집하고 별도 평가한 문헌. 카드를 누르면 초록이 열린다. 별점은 주제 적합성 기준 선별 평가(15편).</span>
-  <span class="en">Collected via the research-agent CLI from arXiv and OpenAlex. Click a card to open its abstract. Star ratings cover 15 papers triaged for topical fit.</span></p>
+  <h2><span class="no">03</span><span class="ko">증거 지도, 인덱스된 86편</span><span class="en">Evidence Map: 86 Indexed Papers</span></h2>
+  <p class="lead"><span class="ko">research-agent CLI로 arXiv와 OpenAlex에서 수집한 문헌이다. 카드를 누르면 초록이 열린다. 별점은 주제 적합성을 기준으로 15편에만 부여했다.</span>
+  <span class="en">Collected from arXiv and OpenAlex with the research-agent CLI. Click a card to open its abstract. Star ratings were assigned to the 15 papers triaged for topical fit.</span></p>
   <div class="tabs" id="tabs"></div>
   <div class="count" id="count"></div>
   <div id="plist"></div>
@@ -255,48 +252,48 @@
 
 <!-- 4. COUNTER-EVIDENCE -->
 <section id="counter">
-  <h2><span class="no">04</span><span class="ko">반대 증거 — 서사가 깔끔하지 않은 이유</span><span class="en">Counter-Evidence — Why the Story Is Not Clean</span></h2>
-  <p class="lead"><span class="ko">"독자는 AI 글을 알아채고 거부한다"는 서사는 세 지점에서 균열난다. 이 균열이야말로 보고서의 핵심 발견이다.</span>
-  <span class="en">"Readers detect and reject AI text" cracks in three places. The cracks are the finding.</span></p>
+  <h2><span class="no">04</span><span class="ko">반대 증거</span><span class="en">Counter-Evidence</span></h2>
+  <p class="lead"><span class="ko">"독자는 AI 글을 알아채고 거부한다"는 서사는 세 곳에서 균열난다. 세 지점 모두 후속 연구의 실마리이기도 하다.</span>
+  <span class="en">The story that readers detect AI text and reject it cracks in three places, and each crack points at follow-up work.</span></p>
 
   <div class="callout red">
-    <h3><span class="ko">① AI 시가 인간 시보다 <em>더 좋게</em> 평가받았다</span><span class="en">1 · AI poetry was rated <em>more favorably</em> than human poetry</span></h3>
-    <p><span class="ko">Porter &amp; Machery (2024, Scientific Reports, 16,340 판단): 비전문가 독자는 AI 시를 인간 시보다 못 알아봤고(정확도 46.6% — 찬스 이하), AI 시를 리듬·아름다움에서 <b>더 높게</b> 평가. 인간 시의 복잡성을 "AI의 어수선함"으로 오독. 이질감은 전문성·장르 의존적이며, "감지 → 거부" 경로는 비전문가 대중 독자에선 역전될 수 있다.</span>
-    <span class="en">Porter &amp; Machery (2024, Scientific Reports, 16,340 judgments): non-expert readers spotted AI poems <i>below chance</i> (46.6%) and rated them <b>higher</b> on rhythm and beauty — misreading human complexity as AI incoherence. Aversion is expertise- and genre-dependent; for lay readers the detect-then-reject path can invert.</span></p>
+    <h3><span class="ko">① AI 시가 인간 시보다 더 좋게 평가받았다</span><span class="en">1. AI poetry was rated more favorably than human poetry</span></h3>
+    <p><span class="ko">Porter와 Machery(2024, Scientific Reports, 16,340 판단)에서 비전문가 독자는 AI 시를 인간 시보다 못 맞혔고(정확도 46.6%), AI 시를 리듬과 아름다움에서 더 높게 평가했다. 인간 시의 복잡성을 AI의 어수선함으로 오독한 것이다. 이질감은 전문성과 장르에 따라 달라지고, 비전문가 대중 독자에게는 감지 뒤에 거부가 오는 경로가 반대로 작동할 수도 있다.</span>
+    <span class="en">In Porter and Machery (2024, Scientific Reports, 16,340 judgments), non-expert readers classified AI poems below chance (46.6%) and rated them higher on rhythm and beauty, misreading the complexity of human poems as AI-style incoherence. The aversion depends on expertise and genre, and for lay readers the detect-then-reject sequence can run in reverse.</span></p>
   </div>
 
   <div class="callout">
-    <h3><span class="ko">② 혐오의 원인은 텍스트가 아니라 라벨이다</span><span class="en">2 · The cause may be the label, not the text</span></h3>
-    <p><span class="ko">Bellaiche 등(2023): <b>같은 AI 그림</b>에 "인간 창작" 라벨만 붙이면 Liking·Beauty·Profundity·Worth 전부 상승. Jakesch 등(2023): 인간다움 휴리스틱은 1인칭 대명사 몇 개로 조작 가능. 즉 "AI 티 나서 거부한다"는 아니고 "AI라고 <b>믿게 만드는 단서</b>를 보고 거부한다"에 가깝다. 독자의 경보는 의미 검증기가 아니라 출처 추론기다.</span>
-    <span class="en">Bellaiche et al. (2023): labeling the <b>same</b> AI artwork "human-created" raises Liking, Beauty, Profundity, and Worth. Jakesch et al. (2023): humanness heuristics can be gamed with a few first-person pronouns. Readers do not reject "text with AI tells" so much as "cues that make me <b>believe</b> it is AI." The alarm is a provenance inference engine, not a meaning checker.</span></p>
+    <h3><span class="ko">② 혐오의 원인은 텍스트가 아니라 라벨일 수 있다</span><span class="en">2. The cause may be the label, not the text</span></h3>
+    <p><span class="ko">Bellaiche 등(2023)은 같은 AI 그림에 "인간 창작" 라벨만 붙여도 선호, 아름다움, 깊이, 가치 평가가 모두 올랐음을 보였다. Jakesch 등(2023)은 인간다움 휴리스틱이 대명사 몇 개만 바꿔도 조작될 수 있음을 보여주었다. 독자는 "AI 티가 나서" 거부하는 것이 아니라 "AI라고 믿게 되는 단서"를 보고 거부하는 쪽에 가깝다. 독자의 경보는 의미 검증기라기보다 출처 추론기다.</span>
+    <span class="en">Bellaiche et al. (2023) found that labeling the same AI artwork "human-created" raised liking, beauty, profundity, and worth across the board. Jakesch et al. (2023) showed humanness heuristics can be gamed by swapping a few pronouns. Readers seem less to reject text with AI tells than to reject cues that lead them to believe it is AI. The alarm works as a provenance inference engine more than a meaning checker.</span></p>
   </div>
 
   <div class="callout">
-    <h3><span class="ko">③ LLM 심리학 수입은 논쟁 중이다</span><span class="en">3 · Importing LLM psychology is contested</span></h3>
-    <p><span class="ko">Lehr 등의 "GPT-4o 인지 부조화" 주장에 대해 Cummins·Elson·Hussey는 "인지도 부조화도 아니다 — 컨텍스트 윈도우 효과로 충분"이라 반박했고(PNAS), Lehr 등이 선택 조작을 추가한 재실험으로 응수했다. 결론 미정. "AI가 인간의 비합리성을 재생한다"는 서사를 독자 경험 주장에 그대로 수입하는 것은 조심해야 한다.</span>
-    <span class="en">Against Lehr et al.'s "GPT-4o shows cognitive dissonance," Cummins, Elson &amp; Hussey counter that the effect is "neither cognitive nor dissonant" — context windows suffice (PNAS); Lehr et al. responded with a new choice-manipulation study. Unresolved. Caution is warranted before importing such narratives into claims about reader experience.</span></p>
+    <h3><span class="ko">③ LLM 심리학의 수입은 아직 논쟁 중이다</span><span class="en">3. Importing LLM psychology is contested</span></h3>
+    <p><span class="ko">Lehr 등의 "GPT-4o 인지 부조화" 주장에 대해 Cummins, Elson, Hussey는 그 효과를 컨텍스트 윈도우 효과로 설명할 수 있다며 "인지적이지도 부조화가 아니기도 하다"고 반박했다(PNAS). Lehr 등은 선택 조작을 넣은 새 실험으로 응수했고 논쟁은 진행 중이다. 이런 결과를 독자 경험 논의에 그대로 옮기는 일에는 주의가 필요하다.</span>
+    <span class="en">Against Lehr et al.'s claim that GPT-4o shows cognitive dissonance, Cummins, Elson and Hussey countered that the effect is "neither cognitive nor dissonant" because context windows account for it (PNAS). Lehr et al. replied with a new experiment adding a choice manipulation, and the exchange is unresolved. Caution is warranted before carrying such narratives into claims about reader experience.</span></p>
   </div>
 </section>
 
 <!-- 5. GAPS -->
 <section id="gaps">
-  <h2><span class="no">05</span><span class="ko">갭 대장 — 아직 아무도 안 한 것</span><span class="en">Gap Ledger — What Nobody Has Done Yet</span></h2>
-  <p class="lead"><span class="ko">코퍼스 전체에 LLM 갭 분석(research-agent)을 돌려 나온 결과. 네 개 모두 실증 연구 주제로 열려 있다.</span>
+  <h2><span class="no">05</span><span class="ko">갭 대장</span><span class="en">Gap Ledger</span></h2>
+  <p class="lead"><span class="ko">수집 코퍼스 전체를 대상으로 LLM 갭 분석(research-agent)을 실행한 결과다. 네 항목 모두 실증 연구로서 열려 있다.</span>
   <span class="en">Output of an LLM gap analysis (research-agent) over the full corpus. All four are open territories for empirical work.</span></p>
-  <div class="gap"><div class="gtype">Missing literature</div><p><span class="ko">수집 코퍼스 어디에도 <b>독자의 AI 텍스트 혐오 자체</b>를 직접 측정한 연구가 없다. 전부 작성자·모델·플랫폼 측면.</span><span class="en">No paper in the corpus directly measures <b>reader aversion to AI text</b> as such — everything is writer-, model-, or platform-side.</span></p></div>
-  <div class="gap"><div class="gtype">Unanswered question</div><p><span class="ko">AI 집필 <b>고지(disclosure)</b>가 신뢰·몰입·품질 평가에 인과적으로 무엇을 하는지 — 라벨 실험(Bellaiche)은 예술로 존재하지만 텍스트 독서 맥락의 인과 검정은 부재.</span><span class="en">Whether <b>disclosing</b> AI authorship causally changes trust, engagement, or quality judgments — label experiments exist for art (Bellaiche), but no causal test in reading contexts.</span></p></div>
-  <div class="gap"><div class="gtype">Connection gap</div><p><span class="ko">작성자 측 효과(공동집필 시 견해 이동, 인지 오프로딩, 부조화)가 <b>독자 측 반응</b>과 연결된 적이 없다. 글쓰기 파이프라인 연구와 독서 경험 연구가 분리돼 있다.</span><span class="en">Writer-side effects (opinion shifts in co-writing, cognitive offloading, dissonance) have never been linked to <b>downstream reader reactions</b>. The writing-pipeline and reading-experience literatures do not touch.</span></p></div>
-  <div class="gap"><div class="gtype">Methodology gap</div><p><span class="ko">자기 보고·단일 세션 실험이 전부. 독서 시간·공유·이탈 같은 <b>행동·종단 측정</b>으로 혐오의 시간 진화를 추적한 연구가 없다. 이탈 연구(Frontiers 2026, IJHCI 2025)도 독서 중단이 아니라 플랫폼 해지를 측정 — 구성 개념 불일치.</span><span class="en">Everything is self-report and single-session. No longitudinal or <b>behavioral</b> measures (reading time, sharing, bounce) track how aversion evolves. Even the discontinuance studies (Frontiers 2026; IJHCI 2025) measure platform quitting, not reading abandonment — a construct mismatch.</span></p></div>
+  <div class="gap"><div class="gtype">Missing literature</div><p><span class="ko">수집 코퍼스 어디에도 독자의 AI 텍스트 혐오 자체를 직접 측정한 연구가 없다. 기존 연구는 모두 작성자, 모델, 플랫폼 쪽에 서 있다.</span><span class="en">No paper in the corpus directly measures reader aversion to AI text as such. Everything stands on the writer, model, or platform side.</span></p></div>
+  <div class="gap"><div class="gtype">Unanswered question</div><p><span class="ko">AI 집필 사실을 고지하면 신뢰, 몰입, 품질 평가가 실제로 어떻게 바뀌는지에 대한 인과 검정이 없다. 라벨 실험은 예술 작품(Bellaiche)에서 존재하지만 텍스트 독서 맥락에서는 부재하다.</span><span class="en">Whether disclosing AI authorship causally changes trust, engagement, or quality judgments remains untested. Label experiments exist for artworks (Bellaiche) but not for reading contexts.</span></p></div>
+  <div class="gap"><div class="gtype">Connection gap</div><p><span class="ko">작성자 쪽에서 관찰된 효과, 그러니까 공동집필에 따른 견해 이동, 인지적 위임, 부조화가 독자 쪽 반응과 연결된 적이 없다. 글쓰기 파이프라인 연구와 독서 경험 연구가 서로 닿지 않는다.</span><span class="en">Writer-side effects, meaning opinion shifts in co-writing, cognitive offloading, and dissonance, have never been linked to downstream reader reactions. The writing-pipeline and reading-experience literatures do not touch.</span></p></div>
+  <div class="gap"><div class="gtype">Methodology gap</div><p><span class="ko">기존 연구는 자기 보고와 단일 세션 실험이 전부다. 독서 시간, 공유, 이탈 같은 행동·종단 측정으로 혐오의 시간에 따른 변화를 추적한 연구가 없다. 이탈 연구들(Frontiers 2026, IJHCI 2025)마저 독서 중단이 아니라 플랫폼 해지를 측정하므로 구성 개념이 어긋난다.</span><span class="en">Everything so far is self-report and single-session. No longitudinal or behavioral measures, such as reading time, sharing, or bounce, track how aversion evolves. Even the discontinuance studies (Frontiers 2026, IJHCI 2025) measure quitting a platform, not abandoning a text, which is a construct mismatch.</span></p></div>
 </section>
 
 <!-- 6. PRACTICE -->
 <section id="practice">
-  <h2><span class="no">06</span><span class="ko">집필 함의 — 증거가 지지하는 것만</span><span class="en">For Writers — Only What the Evidence Supports</span></h2>
+  <h2><span class="no">06</span><span class="ko">집필 함의</span><span class="en">For Writers</span></h2>
   <ul class="tight">
-    <li><span class="ko"><b>마찰은 신호다.</b> 레지스터 전환·단문 파격·미해결 결말은 "사람의 신호"로 작동한다(Reitz). 다만 이건 휴리스틱 속이기가 아니라 판단 단서 회복이다 — 독자의 경보는 출처 추론기다.</span><span class="en"><b>Friction is signal.</b> Register shifts, blunt fragments, unresolved endings operate as humanness cues (Reitz). The point is not to spoof a detector but to restore judgment cues — the reader's alarm is a provenance engine.</span></li>
-    <li><span class="ko"><b>라벨이 지배한다.</b> 같은 텍스트도 출처 믿음이 평가를 바꾼다(Bellaiche). 고지 전략은 미학 문제가 아니라 신뢰 설계 문제 — 그런데 텍스트 독서에서의 인과 효과는 미검증(갭 2). 공개하되 공개만으로 끝내지 말 것.</span><span class="en"><b>Labels dominate.</b> The same text is judged differently under different provenance beliefs (Bellaiche). Disclosure is trust design, not aesthetics — yet its causal effect in reading contexts is untested (gap 2). Disclose, and do more than disclose.</span></li>
-    <li><span class="ko"><b>관점은 장식이 아니라 인과다.</b> 견해가 실린 언어모델로 공동집필하면 사용자의 견해 자체가 이동한다(Jakesch CHI 2023). 글의 목소리는 독자의 생각을 바꾼다 — 그러니 그 목소리가 누구의 것인지가 중요하다.</span><span class="en"><b>Perspective is causal, not decorative.</b> Co-writing with an opinionated model shifts users' own views (Jakesch CHI 2023). A text's voice changes what readers think — so whose voice it is matters.</span></li>
-    <li><span class="ko"><b>유창성을 의심하라.</b> 매끄러움은 진실감을 올리는 검증 없는 단서다(M1). 독자의 "알맹이 없다" 직관은 유창성–진실 상관이 깨졌음을 감지한 것 — 윤문의 목표는 더 매끄러운 글이 아니라 단서와 실체의 재정렬이다.</span><span class="en"><b>Distrust fluency.</b> Smoothness is an unverified cue that raises felt truth (M1). The reader's "hollow" intuition is the fluency–truth correlation failing — the goal of editing is not smoother prose but realignment of cue and substance.</span></li>
+    <li><span class="ko">마찰을 복구하라. 레지스터 전환, 단문, 미해결로 끝나는 마무리는 인간의 신호로 읽힌다(Reitz). 목적은 탐지기를 속이는 것이 아니라 독자의 판단 단서를 되살리는 것이다.</span><span class="en">Restore friction. Register shifts, blunt fragments, and unresolved endings read as human signals (Reitz). The point is not to spoof a detector but to bring back the cues readers judge by.</span></li>
+    <li><span class="ko">라벨 설계가 평가를 좌우한다. 같은 텍스트도 출처에 대한 믿음에 따라 다르게 평가된다(Bellaiche). 고지는 미학의 문제가 아니라 신뢰 설계의 문제인데, 텍스트 독서 맥락에서의 인과 효과는 아직 검증되지 않았다(갭 2). 공개하되 공개만으로 끝내지 말라.</span><span class="en">Design the label, because it steers the evaluation. The same text is judged differently under different provenance beliefs (Bellaiche). Disclosure is a trust problem rather than an aesthetic one, yet its causal effect in reading contexts is untested (gap 2). Disclose, and do more than disclose.</span></li>
+    <li><span class="ko">목소리에는 효과가 있다. 견해가 실린 언어모델로 공동집필하면 사용자 자신의 견해가 이동했다(Jakesch 등, CHI 2023). 글의 목소리가 독자의 생각을 바꾸므로, 그 목소리가 누구의 것인지가 중요하다.</span><span class="en">Voice has effects. Co-writing with an opinionated model shifted users' own views (Jakesch et al., CHI 2023). A text's voice changes what readers think, so whose voice it is matters.</span></li>
+    <li><span class="ko">유창성을 의심하라. 매끄러움은 검증 없이 진실감을 올리는 단서다(M1). 윤문의 목표는 더 매끄러운 글이 아니라 단서와 실체의 재정렬이다.</span><span class="en">Distrust fluency. Smoothness raises felt truth without any verification behind it (M1). The goal of editing is not smoother prose but realignment between the cue and the substance.</span></li>
   </ul>
 </section>
 
@@ -304,8 +301,8 @@
 
 <footer>
   <div class="wrap">
-    <p><span class="ko"><b>방법.</b> research-agent 0.2.6(CLI)으로 arXiv·OpenAlex에서 86편을 수집·인덱싱하고 주제별 분류·선별 평가를 수행. 인용 검증은 Exa 웹 검색으로 원문·DOI 대조. 갭 분석은 코퍼스 전체에 LLM 분석을 실행한 결과. 2026-09-21 생성.</span>
-    <span class="en"><b>Method.</b> 86 papers collected and indexed from arXiv and OpenAlex with research-agent 0.2.6 (CLI), classified by theme and triage-rated. Citations verified against primary sources and DOIs via Exa web search. Gap analysis run over the full corpus with an LLM pass. Generated 2026-09-21.</span></p>
+    <p><span class="ko"><b>방법.</b> research-agent 0.2.6 CLI로 arXiv와 OpenAlex에서 86편을 수집·인덱싱하고 주제별로 분류한 뒤 일부에 평점을 매겼다. 인용 검증은 Exa 웹 검색으로 원문과 DOI를 대조했다. 갭 분석은 코퍼스 전체를 대상으로 LLM으로 실행했다. 2026년 9월 21일 생성.</span>
+    <span class="en"><b>Method.</b> 86 papers were collected and indexed from arXiv and OpenAlex with research-agent 0.2.6 (CLI), classified by theme, and rated in part. Citations were checked against primary records and DOIs via Exa web search. Gap analysis ran over the full corpus with an LLM pass. Generated September 21, 2026.</span></p>
     <p class="mono" style="margin-top:14px">
       <a href="https://github.com/epicsagas/uncanny-writing">epicsagas/uncanny-writing</a> ·
       built with <a href="https://github.com/epicsagas/research-agent">research-agent</a> ·
@@ -319,12 +316,12 @@ const PAPERS = [{"id":"2be94d24","title":"Rights by Architecture: A Human-Compat
 
 const THEMES = {
   perceiving:{ko:"AI 텍스트 인지", en:"Perceiving AI Text"},
-  fluency:{ko:"유창성–진실성", en:"Fluency–Truth"},
-  misinfo:{ko:"허위정보·진실 효과", en:"Illusory Truth"},
-  homogen:{ko:"동질화·창의성", en:"Homogenization"},
+  fluency:{ko:"유창성-진실성", en:"Fluency-Truth"},
+  misinfo:{ko:"허위정보와 진실 효과", en:"Illusory Truth"},
+  homogen:{ko:"동질화와 창의성", en:"Homogenization"},
   algo:{ko:"알고리즘 신뢰", en:"Algorithm (Dis)Trust"},
-  fatigue:{ko:"피로·이탈·부조화", en:"Fatigue & Discontinuance"},
-  context:{ko:"맥락·기타", en:"Context & Other"}
+  fatigue:{ko:"피로와 이탈", en:"Fatigue and Discontinuance"},
+  context:{ko:"맥락과 기타", en:"Context and Other"}
 };
 let cur = "perceiving";
 
