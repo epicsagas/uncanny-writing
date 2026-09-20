@@ -121,6 +121,9 @@
   footer .mono{font-size:11.5px}
   @media(max-width:640px){header.hero{padding-top:86px}.stat{padding-right:14px;margin-right:14px}.gap{flex-direction:column}.gap .gtype{flex:none}}
 </style>
+<!-- Google tag (gtag.js) G-XGTVVMP526 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XGTVVMP526"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XGTVVMP526');</script>
 </head>
 <body class="lang-ko">
 
@@ -353,7 +356,7 @@ function render(){
     const b = document.createElement("button");
     b.innerHTML = `${v[lang]} <span style="opacity:.55">${n}</span>`;
     if (k===cur) b.classList.add("on");
-    b.onclick = ()=>{cur=k;render()};
+    b.onclick = ()=>{cur=k;render();if(window.gtag)gtag('event','theme_tab',{theme:k});};
     tabs.appendChild(b);
   }
   document.getElementById("count").textContent =
@@ -379,6 +382,7 @@ function setLang(l){
   document.getElementById("btn-ko").classList.toggle("on", l==="ko");
   document.getElementById("btn-en").classList.toggle("on", l==="en");
   try{localStorage.setItem("uw-lang",l)}catch(e){}
+  if(window.gtag)gtag('event','lang_toggle',{lang:l});
   render();
 }
 try{const s=localStorage.getItem("uw-lang"); if(s==="en") setLang("en")}catch(e){}
