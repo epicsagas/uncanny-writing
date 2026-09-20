@@ -385,7 +385,7 @@ function setLang(l){
   if(window.gtag)gtag('event','lang_toggle',{lang:l});
   render();
 }
-try{const s=localStorage.getItem("uw-lang"); if(s==="en") setLang("en")}catch(e){}
+try{const u=new URLSearchParams(location.search).get("lang"); if(u==="en"||u==="ko"){setLang(u)}else{const s=localStorage.getItem("uw-lang"); if(s==="en") setLang("en")}}catch(e){}
 render();
 </script>
 </body>
